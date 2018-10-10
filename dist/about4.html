@@ -147,7 +147,60 @@
             <p>since 2005</p>
             <p>公司致力于让客户生活幸福、使员工工作有价值、为股东创造效益</p>
         </div>
-        
+        <div class="his-box">
+            <ul class="his-nav clearfix">
+                <li>
+                    <div class="pa">
+                        <p class="nowti year ff-1">2005—2007</p>
+                        <p class="nowti ti fwb">全国扩张阶段</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pa">
+                        <p class="nowti year ff-1">2005—2007</p>
+                        <p class="nowti ti fwb">全国扩张阶段</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pa">
+                        <p class="nowti year ff-1">2005—2007</p>
+                        <p class="nowti ti fwb">全国扩张阶段</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pa">
+                        <p class="nowti year ff-1">2005—2007</p>
+                        <p class="nowti ti fwb">全国扩张阶段</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="his-list">
+                <li class="freeTx">
+                    <p>合能物业聚焦“产品全周期，生活全周期”</p>
+                    <p>构建“2年好产品+68年好服务”的物业服务体系。</p>
+                    <br>
+                    <p><img src="img/ab_i4.jpg" alt=""></p>
+                </li>
+                <li class="freeTx">
+                    <p>合能物业聚焦“产品全周期，生活全周期”合能物业聚焦“产品全周期，生活全周期”</p>
+                    <p>构建“2年好产品+68年好服务”的物业服务体系。</p>
+                    <br>
+                    <p><img src="img/ab_i4.jpg" alt=""></p>
+                </li>
+                <li class="freeTx">
+                    <p>合能物业聚焦“产品全周期，生活全周期”合能物业聚焦“产品全”</p>
+                    <p>构建“2年好产品+68年好服务”的物业服务体系。</p>
+                    <br>
+                    <p><img src="img/ab_i4.jpg" alt=""></p>
+                </li>
+                <li class="freeTx">
+                    <p>合能物业聚焦“产品全周期，生活全周期”期，生活全周期”</p>
+                    <p>构建“2年好产品+68年好服务”的物业服务体系。</p>
+                    <br>
+                    <p><img src="img/ab_i4.jpg" alt=""></p>
+                </li>
+            </ul>
+        </div>
         <div class="ab-h"></div>
     </div>
     
@@ -231,6 +284,16 @@
         share : [{}]
     }
     with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+    $(function(){
+        function changeHistory(index) {
+            $('.his-list li').hide().eq(index).show();
+            $('.his-nav li').removeClass('act').eq(index).addClass('act')
+        };
+        changeHistory(0);
+        $('.his-nav li').bind(_click, function() {
+            changeHistory($(this).index())
+        })
+    })
 </script>
 </body>
 </html>
